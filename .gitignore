@@ -91,3 +91,6 @@ ENV/
 # vim stuff
 *.swp
 *.swo
+
+# don't track dada
+data/*
