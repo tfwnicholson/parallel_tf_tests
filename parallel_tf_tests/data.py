@@ -4,6 +4,9 @@ Ubiquotous data module.
 A lighweight wrapper around read_data_sets for MNIST that yields a requested sized subset.
 """
 
+import logging
+logging.getLogger("tensorflow").setLevel(logging.WARNING)
+
 from tensorflow.contrib.learn.python.learn.datasets.mnist import read_data_sets
 
 # where we store the data, just dump it here and leave it lying around
